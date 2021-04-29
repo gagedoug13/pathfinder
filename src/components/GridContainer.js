@@ -11,9 +11,9 @@ class GridContainer extends Component {
     
     componentDidMount() {
         const nodes = []
-        for (let row=0; row<40; row++) {
+        for (let row=0; row<28; row++) {
             nodes.push(0)
-            for (let col=0; col<32; col++) {
+            for (let col=0; col<35; col++) {
                 nodes.push(0)
             }
         }
@@ -21,12 +21,14 @@ class GridContainer extends Component {
             nodes: nodes
         })
     }
+    counter = 0
    render() {
-    return this.state.nodes.map(x => {
+       return this.state.nodes.map(x => {
+        this.counter++
         return  (
-
-                <Grid nodes={this.state.nodes}/>
-            
+            <div className='gridContainer'>
+                <Grid counter={this.counter} nodes={this.state.nodes}/>
+            </div>
         )
     })
    }

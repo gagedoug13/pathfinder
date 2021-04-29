@@ -1,21 +1,34 @@
 .main {
-  height: 60vh;
+  /* height: 60vh; */
   width: 98vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: wrap;
-  border: 2px solid purple;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* flex-flow: wrap; */
+  /* border: 2px solid purple; */
 }
 
-.gridContainer {
+/* .gridContainer {
   height: 50vh; 
   width: 80vw;
   border: 2px solid black;
-}
+} */
 
 .grid {
   height: 3vh;
   width: 1.5vw;
   border: 2px black solid;
+}
+
+.nav {
+  height: 30vh;
+  border: 2px black solid;
+}
+
+.fullGrid {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
 }
