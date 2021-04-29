@@ -1,12 +1,12 @@
-.main {
+/* .main { */
   /* height: 60vh; */
-  width: 98vw;
+  /* width: 98vw; */
   /* display: flex; */
   /* align-items: center;
   justify-content: center; */
   /* flex-flow: wrap; */
   /* border: 2px solid purple; */
-}
+/* } */
 
 /* .gridContainer {
   height: 50vh; 
@@ -17,18 +17,25 @@
 .grid {
   height: 3vh;
   width: 1.5vw;
-  border: 2px black solid;
+  border: 1.3px solid darkgray;
 }
 
 .nav {
-  height: 30vh;
+  height: 8vh;
   border: 2px black solid;
+  background-color: #023047;
 }
 
 .fullGrid {
+  width: 98.3vw;
   height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: wrap;
+}
+
+.nodeOptions {
+  height: 22vh;
+  /* border: 2px solid pink; */
 }
