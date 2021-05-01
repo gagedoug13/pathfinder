@@ -11,9 +11,9 @@ class GridContainer extends Component {
     
     componentDidMount() {
         const nodes = []
-        for (let row=0; row<29; row++) {
+        for (let row=0; row<20; row++) {
             nodes.push(0)
-            for (let col=0; col<40; col++) {
+            for (let col=0; col<50; col++) {
                 nodes.push(0)
             }
         }

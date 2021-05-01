@@ -27,8 +27,8 @@
 }
 
 .fullGrid {
-  width: 98.3vw;
-  height: 60vh;
+  /* width: 98.3vw;
+  height: 60vh; */
   display: flex;
   align-items: center;
   justify-content: center;
