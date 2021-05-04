@@ -1,12 +1,14 @@
-/* .main { */
-  /* height: 60vh; */
-  /* width: 98vw; */
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-  /* flex-flow: wrap; */
-  /* border: 2px solid purple; */
-/* } */
+.grid{
+  /* height: 70vh;  */
+  /* width: 98vw;  */
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  flex-flow: wrap;
+  border: 2px solid purple;
+}
+
+
 
 /* .gridContainer {
   height: 50vh; 
@@ -14,7 +16,7 @@
   border: 2px solid black;
 } */
 
-.grid {
+.node {
   height: 3vh;
   width: 1.5vw;
   border: 1.3px solid darkgray;
