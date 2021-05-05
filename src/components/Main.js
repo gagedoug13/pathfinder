@@ -20,7 +20,7 @@ class Main extends Component {
                     col,
                     row,
                     isStart: row === 10 && col === 5,
-                    isFinish: row === 10 && col === 45,
+                    isFinish: row === 10 && col === 18,
 
                 }
                 currentRow.push(currentNode)
@@ -40,8 +40,9 @@ class Main extends Component {
                     return (
                         <div className='nodesContainer'>
                             {row.map((node, nodeId) => {
+                                const { isStart, isFinish } = node
                                 return (
-                                    <Node />
+                                    <Node isStart={isStart} isFinish={isFinish}/>
                                 )
                             })}
                         </div>

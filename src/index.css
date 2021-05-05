@@ -41,3 +41,11 @@
   height: 22vh;
   /* border: 2px solid pink; */
 }
+
+.node-start {
+  background-color: lightgreen;
+}
+
+.node-finish {
+  background-color: red;
+}
