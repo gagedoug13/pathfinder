@@ -35,6 +35,8 @@ class Main extends Component {
    render() {
        const nodes = this.state.nodes
         return  (
+        <>
+            <button onClick={() => this.dijkstra()}>visualize Dijkstra's algorithm</button>
             <div className='grid'>
                 {nodes.map((row, rowId) => {
                     return (
@@ -50,9 +52,17 @@ class Main extends Component {
                 })}
                 <Node counter={this.counter} nodes={this.state.nodes}/>
             </div>
+        </>
         )
    }
 
 }
 
 export default Main;
+
+
+function dijkstra(grid, startNode, endNode) {
+    if (!startNode || !endNode || startNode === endNode) {
+        return false;
+    }
+}
