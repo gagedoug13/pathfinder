@@ -36,7 +36,7 @@ class Main extends Component {
        const nodes = this.state.nodes
         return  (
         <>
-            <button onClick={() => this.dijkstra()}>visualize Dijkstra's algorithm</button>
+            <button onClick={() => dijkstra()}>visualize Dijkstra's algorithm</button>
             <div className='grid'>
                 {nodes.map((row, rowId) => {
                     return (
@@ -61,8 +61,27 @@ class Main extends Component {
 export default Main;
 
 
-function dijkstra(grid, startNode, endNode) {
+function dijkstra(grid, startNode, endNode){
     if (!startNode || !endNode || startNode === endNode) {
         return false;
     }
+
+    startNode.distance = 0
+    const unvisitedNodes = grid.slice()
+
+    while(!!unvisitedNodes.length) {
+        sortNodesByDistance(unvisitedNodes)
+        const closestNode = unvisitedNodes.shift()
+
+        closestNode.visited = true
+
+        if(closestNode === endNode) {
+            return 'success!'
+        }
+        // this is where I will update the neighbor nodes
+    }
+}
+
+function sortNodesByDistance(unvisitedNodes){
+    unvisitedNodes.sort((nodeA, nodeB) => nodeA.distance - nodeB.distance)
 }
